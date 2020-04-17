@@ -27,3 +27,51 @@
   <a class="btn btn-primary btn-lg" href="/concatenate" role="button">Learn more</a>
 
 {% endblock judul %}
+
+{% block konten1 %}
+
+<div class="container">
+  <form class="was-validated">
+    <div class="mx-auto px-md-5" style="width: auto;">
+      <label for="validationTextarea">Text area</label>
+      <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+      <div class="invalid-feedback">
+        Please enter a message in the textarea.
+      </div>
+    </div>
+
+    <div class="custom-control custom-checkbox mb-3 mx-auto px-md-5">
+      <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+      <label class="custom-control-label" for="customControlValidation1">Check this custom checkbox</label>
+      <div class="invalid-feedback">Example invalid feedback text</div>
+    </div>
+
+    <div class="custom-control custom-radio mx-auto px-md-5">
+      <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
+      <label class="custom-control-label" for="customControlValidation2">Toggle this custom radio</label>
+    </div>
+    <div class="custom-control custom-radio mb-3 mx-auto px-md-5">
+      <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
+      <label class="custom-control-label" for="customControlValidation3">Or toggle this other custom radio</label>
+      <div class="invalid-feedback">More example invalid feedback text</div>
+    </div>
+
+    <div class="form-group mx-auto px-md-5">
+      <select class="custom-select" required>
+        <option value="">Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      <div class="invalid-feedback">Example invalid custom select feedback</div>
+    </div>
+
+    <div class="custom-file mx-md-5" style="width: 500px;">
+      <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+      <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+      <div class="invalid-feedback">Example invalid custom file feedback</div>
+    </div>
+  </form>
+</div>
+
+{% endblock konten1 %}
