@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block NavHead %}
+  <li class="nav-item ">
+    <a class="nav-link" href="/">Home
+      <span class="sr-only">(current)</span>
+    </a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" href="/about">About</a>
+  </li>
+
+  <li class="nav-item active">
+    <a class="nav-link" href="/data">Data</a>
+  </li>
+{% endblock NavHead %}
+
+{% block konten1 %}
+<div class="container">
+  <h1 class="display-4">{{heading}}</h1>
+  <p class="lead">{{subheading}}</p>
+</div>
+
+{% endblock konten1 %}
+
