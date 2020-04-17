@@ -1,0 +1,27 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+
+    {% include "snippets/styles.html" %}
+
+</head>
+<body>
+  {% include "snippets/navbar.html"%}
+     
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container text-white">
+            <h1 class="display-4">{{heading}}</h1>
+            <p class="lead">{{subheading}}</p>
+            <hr class="my-4">
+            <p>Explore further data modeling application to your business</p>
+            <a class="btn btn-primary btn-lg" href="/concatenate" role="button">Learn more</a>
+
+        </div>
+      </div>
+
+    {% include "snippets/scripts.html" %}
+</body>
+</html>
