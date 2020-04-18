@@ -2,26 +2,27 @@
 
 {% block NavHead %}
   <li class="nav-item ">
-    <a class="nav-link" href="/">Home
+    <a class="nav-link" href="\">Home
       <span class="sr-only">(current)</span>
     </a>
   </li>
 
   <li class="nav-item active">
-    <a class="nav-link" href="/about">About
-   
-    </a>
+    <a class="nav-link" href="\about">About</a>
   </li>
 
   <li class="nav-item">
-    <a class="nav-link" href="/data">Data</a>
+    <a class="nav-link" href="\data">Data</a>
   </li>
 {% endblock NavHead %}
 
+{% block judul %}
+  <h1 class="display-1">{{heading}}</h1>        
+{% endblock judul %}
+
 {% block konten1 %}
 <div class="container text-black">
-    <h1 class="display-4">{{heading}}</h1>
-    <p class="lead">{{subheading}}</p>
+  <p class="lead">{{subheading}}</p>
 </div>
 
 <div class="container">

@@ -16,11 +16,31 @@
   </li>
 {% endblock NavHead %}
 
+{% block judul %}
+  <h1 class="display-3">{{heading}}</h1>
+{% endblock judul %}
+
 {% block konten1 %}
 <div class="container">
-  <h1 class="display-4">{{heading}}</h1>
   <p class="lead">{{subheading}}</p>
 </div>
 
+<div class = "container">
+  <div class="card w-80">
+    <div class="card-body">
+      <h5 class="card-title">Card title 1</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="#" class="btn btn-primary">Button</a>
+    </div>
+  </div>
+
+  <div class="card w-80">
+    <div class="card-body">
+      <h5 class="card-title">Card title 2</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="#" class="btn btn-primary">Button</a>
+    </div>
+  </div>
+</div>
 {% endblock konten1 %}
 
