@@ -2,7 +2,7 @@ from django.shortcuts import render
 import matplotlib.pyplot as plt
 import io
 import urllib, base64
-from pylab import *
+from pylab import arange,sin,pi,xlabel,ylabel,title,grid
 
 def index(request) :
     #plt.plot(range(10))
@@ -23,5 +23,5 @@ def index(request) :
     buf.seek(0)
     string = base64.b64encode(buf.read())
     uri = urllib.parse.quote(string)
-    
+
     return render(request, 'graph/index.html', {'data':uri})
