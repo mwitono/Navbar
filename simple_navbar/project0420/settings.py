@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'concatenate',
     'about',
     'data',
+    'graph',
 ]
 
 MIDDLEWARE = [

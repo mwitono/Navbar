@@ -12,6 +12,7 @@ urlpatterns = [
     url(r'^about/', include('about.urls')),
     url(r'^data/', include('data.urls')),
     url(r'^concatenate/', include('concatenate.urls')),
+    url(r'^graph/', include('graph.urls')),
     #url(r'^concatenate/$', concatenateViews.index),
     #url(r'^about/$', aboutViews.index),
     #url(r'^data/$', dataViews.index),
