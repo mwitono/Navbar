@@ -16,10 +16,12 @@ def index(request) :
     title('About as simple as it gets, folks')
     grid(True)
 
+#keep graph in memory 
     fig = plt.gcf()
     buf = io.BytesIO()
     fig.savefig(buf,format='png')
     buf.seek(0)
     string = base64.b64encode(buf.read())
     uri = urllib.parse.quote(string)
+    
     return render(request, 'graph/index.html', {'data':uri})
