@@ -27,3 +27,4 @@ def index(request) :
     d1 = pd.read_excel(r'data/media/Data_Final.xlsx')
 
     return render(request, 'data/index.html', context)
+
